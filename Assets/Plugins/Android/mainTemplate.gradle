@@ -7,9 +7,6 @@
         maven {
             url "https://maven.google.com"
         }
-        maven {
-            url (unityProjectPath + "/Assets/GeneratedLocalRepo/Firebase/m2repository") // Assets/Firebase/Editor/AnalyticsDependencies.xml:18, Assets/Firebase/Editor/AppDependencies.xml:22
-        }
         mavenLocal()
         mavenCentral()
     }
@@ -21,12 +18,7 @@ apply plugin: 'com.android.library'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 // Android Resolver Dependencies Start
-    implementation 'com.google.android.gms:play-services-base:17.6.0' // Assets/Firebase/Editor/AppDependencies.xml:17
     implementation 'com.google.android.play:core:1.10.3' // Assets/GooglePlayPlugins/com.google.play.core/Editor/PlayCoreDependencies.xml:3
-    implementation 'com.google.firebase:firebase-analytics:18.0.3' // Assets/Firebase/Editor/AppDependencies.xml:15
-    implementation 'com.google.firebase:firebase-analytics-unity:7.2.0' // Assets/Firebase/Editor/AnalyticsDependencies.xml:18
-    implementation 'com.google.firebase:firebase-app-unity:7.2.0' // Assets/Firebase/Editor/AppDependencies.xml:22
-    implementation 'com.google.firebase:firebase-common:19.5.0' // Assets/Firebase/Editor/AppDependencies.xml:13
 // Android Resolver Dependencies End
 **DEPS**}
 
